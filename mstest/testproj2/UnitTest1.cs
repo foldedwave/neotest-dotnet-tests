@@ -16,4 +16,14 @@ public class UnitTest1
     {
         Assert.AreEqual(2, a);
     }
+
+    [TestClass]
+    public class NestedClass
+    {
+        [TestMethod]
+        public void Test1()
+        {
+            Assert.AreEqual(1, 2);
+        }
+    }
 }

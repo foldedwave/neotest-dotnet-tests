@@ -13,12 +13,22 @@ public class Tests
     {
         Assert.AreEqual(1, 2);
     }
-    
+
     [Theory]
     [TestCase(1)]
     [TestCase(2)]
     public void Test2(int a)
     {
         Assert.AreEqual(2, a);
+    }
+
+    [TestFixture]
+    public class NestedClass
+    {
+        [Test]
+        public void Test1()
+        {
+            Assert.AreEqual(1, 2);
+        }
     }
 }

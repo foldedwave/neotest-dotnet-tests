@@ -21,4 +21,14 @@ public class Tests
     {
         Assert.AreEqual(1, a);
     }
+
+    [TestFixture]
+    public class NestedClass
+    {
+        [Test]
+        public void Test1()
+        {
+            Assert.AreEqual(1,1);
+        }
+    }
 }

@@ -15,4 +15,13 @@ public class UnitTest1
     {
         Assert.Equal(1, a);
     }
+
+    public class NestedClass
+    {
+        [Fact]
+        public void Test1()
+        {
+            Assert.Equal(1, 1);
+        }
+    }
 }
